@@ -1,4 +1,4 @@
-import implementor from './mine';
+import implementor from './components/mine';
 
 class main{
 
