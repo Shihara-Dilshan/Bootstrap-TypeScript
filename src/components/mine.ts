@@ -1,38 +1,38 @@
-import mine from './interface';
+import mine from "./interface";
 
 class implementor implements mine {
   private name: string;
   private age: number;
 
   constructor(name: string, age: number) {
-    console.log("sds");
+    console.log("mine class insatiated");
     this.name = name;
     this.age = age;
   }
 
-  public setName(name: string): void {
+  public setName = (name: string): void => {
     this.name = name;
-  }
+  };
 
-  public setAge(age: number): void {
+  public setAge = (age: number): void => {
     this.age = age;
-  }
+  };
 
-  public getName(): string {
+  public getName = (): string => {
     return this.name;
-  }
+  };
 
-  public getAge(): number {
+  public getAge = (): number => {
     return this.age;
-  }
+  };
 
-  public run(): void {
+  public run = (): void => {
     console.log("Running");
-  }
+  };
 
-  public getInt(): number {
+  public getInt = (): number => {
     return 12;
-  }
+  };
 }
 
 export default implementor;
